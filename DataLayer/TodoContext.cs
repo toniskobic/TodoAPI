@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Diagnostics.CodeAnalysis;
-using DataLayer.Models;
-
-namespace DataLayer
+﻿namespace DataLayer
 {
+    using Microsoft.EntityFrameworkCore;
+    using DataLayer.Models;
+
     public class TodoContext : DbContext
     {
         public TodoContext(DbContextOptions<TodoContext> options)

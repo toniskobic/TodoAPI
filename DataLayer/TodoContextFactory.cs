@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.EntityFrameworkCore;
-
-namespace DataLayer
+﻿namespace DataLayer
 {
+    using Microsoft.EntityFrameworkCore.Design;
+    using Microsoft.EntityFrameworkCore;
+
     public class TodoContextFactory : IDesignTimeDbContextFactory<TodoContext>
     {
         public TodoContext CreateDbContext(string[] args)
