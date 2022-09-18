@@ -1,6 +1,8 @@
 ﻿namespace DataLayer
 {
-    public class DatabaseScope
+    using DataLayer.Interfaces;
+
+    public class DatabaseScope : IDatabaseScope
     {
         private readonly TodoContext _todoContext;
 
@@ -9,7 +11,7 @@
             _todoContext = todoContext;
         }
 
-        public void Save()
+        public void SaveAsync()
         {
             _todoContext.SaveChangesAsync();
         }
