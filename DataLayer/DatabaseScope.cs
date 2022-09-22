@@ -11,9 +11,9 @@
             _todoContext = todoContext;
         }
 
-        public void SaveAsync()
+        public Task<int> SaveAsync()
         {
-            _todoContext.SaveChangesAsync();
+            return _todoContext.SaveChangesAsync();
         }
     }
 }
